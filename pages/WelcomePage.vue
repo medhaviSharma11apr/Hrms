@@ -8,7 +8,7 @@ const loading= ref(false)
 
  <div class="container-fluid mt-4">
     <div class="d-flex flex-column flex-md-row min-vh-100">
-      <div class="p-3 bg-success text-white flex-fill d-flex align-items-center justify-content-center">
+      <div class="p-3   flex-fill d-flex align-items-center justify-content-center">
      
        <LoginForm></LoginForm>
       </div>
