@@ -1,6 +1,9 @@
+<script setup lang="ts">
+import WelcomePage from './WelcomePage.vue';
+
+</script>
+
 <template>
-    <h1>
-        hello world!!
-        <LogoCustom image="/images/logo.png/"></LogoCustom>
-    </h1>
+   <WelcomePage></WelcomePage>
+   
 </template>
