@@ -44,19 +44,18 @@
             Login 
         </div>
   
-          <div class="container mt-2 bg-primary d-flex align-items-start justify-content-center py-2  rounded text-white" ,style="background-color: #495057;" >
-           <div class="h-2">
-            
+          <div class="container mt-2 bg-primary d-flex align-items-start  py-2  rounded text-white" ,style="background-color: #495057;" >
+           <div class="h-2 bg-white border border-primary">
+            <img src="public/images/google.jpeg" height="20" width="20">
            </div>
-            Login 
-        </div>
-         
-        
-    
-      
 
-       
-    </b-form >
+           <div>
+               <p class="p-0">
+                  Login wiyh your company google account
+               </p>
+           </div>
+        </div>
+ </b-form >
    
   </div>
 </div>

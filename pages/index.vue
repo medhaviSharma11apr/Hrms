@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import WelcomePage from './WelcomePage.vue';
+import WelcomePage from '../components/WelcomePage.vue';
 
 </script>
 
