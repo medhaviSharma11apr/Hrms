@@ -1,96 +1,107 @@
 <template>
 
-<div class="form">
-   <div>
-    <b-form >
-       <LogoCustom image="./images/logo.png" height="60" width="300"></LogoCustom>
-       <div class="welcome my-4">
-         <p>Welcome to</p>
-       </div>
-         <div class="hrms">
-            <h4>Human Resource Management System</h4>
-         </div>
-         <div class="username">
-      
-        <b-form-group class="my-3" >
-        <b-form-input
-          id="input-1"
-        
-          type="email"
-          placeholder="Username"
-          required
-        ></b-form-input>
-        </b-form-group>
-         </div>
+  <div class="form">
+    <div>
+      <b-form>
+        <LogoCustom image="./images/logo.png" height="60" width="300"></LogoCustom>
+        <div class="welcome my-4">
+          <p>Welcome to</p>
+        </div>
+        <div class="hrms">
+          <h4>Human Resource Management System</h4>
+        </div>
+        <div class="username">
+
+          <b-form-group class="my-3">
+            <b-form-input id="input-1" type="email" placeholder="Username" required></b-form-input>
+          </b-form-group>
+        </div>
 
         <div class="password">
-        <b-form-group >
-        <b-form-input
-          id="input-1"
-          type="email"
-          placeholder="Password"
-          required
-        ></b-form-input>
-        </b-form-group>
-         </div>
-        
-         <div class="d-flex align-items-end justify-content-end pt-2 pb-2">
-              <span>
-            Forgot Password
-         </span>
-         </div>
-    
-         <div class="container mt-2 bg-secondary d-flex align-items-center justify-content-center py-2  rounded text-white" ,style="background-color: #495057;" >
-            Login 
+          <b-form-group>
+            <b-form-input id="input-1" type="email" placeholder="Password" required class="custom-input"></b-form-input>
+          </b-form-group>
         </div>
-  
-          <div class="container mt-2 bg-primary d-flex align-items-start  py-2  rounded text-white" ,style="background-color: #495057;" >
-           <div class="h-2 bg-white border border-primary">
-            <img src="public/images/google.jpeg" height="20" width="20">
-           </div>
 
-           <div>
-               <p class="p-0">
-                  Login wiyh your company google account
-               </p>
-           </div>
+        <div class="d-flex align-items-end justify-content-end pt-2 pb-2">
+          <span>
+            Forgot Password
+          </span>
         </div>
- </b-form >
-   
+
+        <div
+          class="container mt-2 bg-secondary d-flex align-items-center justify-content-center py-2  rounded text-white"
+          ,style="background-color: #495057;">
+          Login
+        </div>
+
+        <div class="container mt-2 bg-primary d-flex align-items-start  py-2  rounded text-white"
+          ,style="background-color: #495057;">
+          <div class="h-2 bg-white border border-primary">
+            <img src="public/images/google.jpeg" height="20" width="20">
+          </div>
+
+          <div>
+            <p class="p-0">
+              Login wiyh your company google account
+            </p>
+          </div>
+        </div>
+      </b-form>
+
+    </div>
   </div>
-</div>
 </template>
 
 <style scoped>
 .custom-bg-color {
-  background-color: #495057; /* Dark gray background */
+  background-color: #495057;
+  /* Dark gray background */
+}
+.custom-input {
+  background-color: #f0f0f0; /* Light grey background */
+  border: none; 
+  padding-left: 10px; /* Add spacing to avoid text touching border */
+}
+.custom-input:focus{
+   border-bottom: 3px solid #50b798;;
+  
+}
+.form {
+  font-family: Montserrat, sans-serif;
 }
 
-.welcome{
-    margin: 0;
-    font-family: sans-serif;
-    font-size: 1rem;
-    font-weight: 100;
-    line-height: 1.5;
+.welcome {
+  margin: 0;
+  font-family: sans-serif;
+  font-size: 1rem;
+  font-weight: 100;
+  line-height: 1.5;
 
-     color: #495057;
-    text-align: left;
-    
+  color: #495057;
+  text-align: left;
+
 }
+
 .password {
-  background-color: #f0f0f0; /* Light gray background */
-  border: 2px solid #ccc; /* Border with color */
-    border-radius: 8px;
+  background-color: #f0f0f0;
+  /* Light gray background */
+  border: 2px solid #ccc;
+  /* Border with color */
+  border-radius: 8px;
 
 }
+
 .password .b-form-input {
-  border: 1px solid #ccc; /* Border for input field */
+  border: 1px solid #ccc;
+  /* Border for input field */
   padding: 10px;
   border-radius: 4px;
 }
-span{
-        color: #218bc3;
-            font-size: .8em;
+
+span {
+  color: #218bc3;
+  font-size: .8em;
 }
 </style>
 

@@ -36,8 +36,8 @@
 
 <style>
 .custom-list li::marker{
-  font-size: 20px;
-  color: #68ca66;; /* Changes text & bullet color */
+  font-size: 25px;
+  color: #50b798;; /* Changes text & bullet color */
 }
 .balanced-text {
   text-wrap: balance;
