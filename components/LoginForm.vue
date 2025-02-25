@@ -1,6 +1,6 @@
 <template>
 
-  <div class="form">
+  <div class="form mycustom-form">
     <div>
       <b-form>
         <LogoCustom image="./images/logo.png" height="60" width="300"></LogoCustom>
@@ -13,13 +13,13 @@
         <div class="username">
 
           <b-form-group class="my-3">
-            <b-form-input id="input-1" type="email" placeholder="Username" required></b-form-input>
+            <b-form-input id="input-1" type="email" placeholder="Username" required ></b-form-input>
           </b-form-group>
         </div>
 
         <div class="password">
           <b-form-group>
-            <b-form-input id="input-1" type="email" placeholder="Password" required class="custom-input"></b-form-input>
+            <b-form-input id="input-1" type="email" placeholder="Password" required ></b-form-input>
           </b-form-group>
         </div>
 
@@ -54,22 +54,31 @@
 </template>
 
 <style scoped>
-.custom-bg-color {
-  background-color: #495057;
-  /* Dark gray background */
+.form input::placeholder{
+ font-size: .95rem;
+ font-weight: 100;
+letter-spacing: 0.5px;
+    color: #495057;
 }
-.custom-input {
-  background-color: #f0f0f0; /* Light grey background */
-  border: none; 
-  padding-left: 10px; /* Add spacing to avoid text touching border */
-}
-.custom-input:focus{
+.username input:focus{
    border-bottom: 3px solid #50b798;;
-  
+   box-shadow: none !important; 
+   font-family: Montserrat, sans-serif;
 }
-.form {
-  font-family: Montserrat, sans-serif;
+.password input{
+   background-color: #f2f2f2;
+   border: none;
 }
+
+.password input:focus{
+   border-bottom: 3px solid #50b798;
+   border-top: 0px;
+   border-left: 0px;
+   border-right: 0px;
+   box-shadow: none !important; /* Remove any shadow */
+   font-family: Montserrat, sans-serif;
+}
+
 
 .welcome {
   margin: 0;
@@ -77,27 +86,11 @@
   font-size: 1rem;
   font-weight: 100;
   line-height: 1.5;
-
   color: #495057;
   text-align: left;
 
 }
 
-.password {
-  background-color: #f0f0f0;
-  /* Light gray background */
-  border: 2px solid #ccc;
-  /* Border with color */
-  border-radius: 8px;
-
-}
-
-.password .b-form-input {
-  border: 1px solid #ccc;
-  /* Border for input field */
-  padding: 10px;
-  border-radius: 4px;
-}
 
 span {
   color: #218bc3;
